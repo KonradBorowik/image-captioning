@@ -4,7 +4,7 @@ from PIL import Image
 from transformers import AutoProcessor, BlipForConditionalGeneration
 
 
-# load processor and model
+# load pretrained processor and model
 PROCESSOR = AutoProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
 MODEL = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
 
